@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings Based on their TIME</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <h1><span id="Greetings"></span></h1><br> <br> <br> <br>
+        <h2><span id="Thetime"></span></h2>
+   
+    <script>
+        var myDate = new Date();
+        var hrs = myDate.getHours();
+        var greet;
+        
+        if (hrs >= 5 && hrs < 11)
+            greet = '🌄 Good morning, Have a Great Day ';
+        else if (hrs >= 11 && hrs <= 17)
+            greet = '👋 Good Afternoon ';
+        else if (hrs >= 17 && hrs <= 23)
+            greet = '🌆 Good evening, How was your day? ';
+        else if (hrs == 24 || hrs < 5)
+            greet = '🦉 Hello, you night-owl.';
+            
+        document.getElementById('Greetings').innerHTML = greet;
+        document.getElementById('Thetime').innerHTML = "The time is  "+hrs+":00 Hours";
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+}
+body{
+    
+    justify-content: center;
+    vertical-align: center;
+}
+h1{
+    text-align: center;
+    float: center; 
+    padding-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: -.02em;
+}
+h2{
+    text-align: center;
+    
+    padding-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: -.02em;
+}
